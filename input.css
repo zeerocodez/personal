@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+}
+
+@layer utilities {
+  .glass-card {
+      background: rgba(53, 52, 55, 0.4);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(66, 71, 84, 0.15);
+  }
+  .hero-glow {
+      background: radial-gradient(circle at 50% 50%, rgba(173, 198, 255, 0.08) 0%, rgba(19, 19, 21, 0) 70%);
+  }
+  .text-gradient {
+      background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}

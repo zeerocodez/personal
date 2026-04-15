@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nuel Effiong | Systems Builder &amp; AI Expert</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#002e6a",
+                    "primary-container": "#4d8eff",
+                    "surface-bright": "#39393b",
+                    "background": "#131315",
+                    "inverse-surface": "#e5e1e4",
+                    "surface-variant": "#353437",
+                    "on-tertiary-fixed": "#261a00",
+                    "primary-fixed": "#d8e2ff",
+                    "secondary-container": "#571bc1",
+                    "tertiary-container": "#b88900",
+                    "surface-container-high": "#2a2a2c",
+                    "inverse-on-surface": "#313032",
+                    "surface-container-low": "#1c1b1d",
+                    "surface-tint": "#adc6ff",
+                    "on-primary-fixed": "#001a42",
+                    "error": "#ffb4ab",
+                    "secondary": "#d0bcff",
+                    "secondary-fixed": "#e9ddff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-tertiary-container": "#372700",
+                    "outline-variant": "#424754",
+                    "on-tertiary": "#402d00",
+                    "surface-dim": "#131315",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-error": "#690005",
+                    "inverse-primary": "#005ac2",
+                    "on-primary-fixed-variant": "#004395",
+                    "tertiary": "#f9bd22",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "on-secondary-container": "#c4abff",
+                    "surface-container": "#201f21",
+                    "surface": "#131315",
+                    "primary": "#adc6ff",
+                    "outline": "#8c909f",
+                    "secondary-fixed-dim": "#d0bcff",
+                    "on-error-container": "#ffdad6",
+                    "surface-container-lowest": "#0e0e10",
+                    "surface-container-highest": "#353437",
+                    "on-background": "#e5e1e4",
+                    "on-surface-variant": "#c2c6d6",
+                    "on-secondary-fixed": "#23005c",
+                    "on-surface": "#e5e1e4",
+                    "tertiary-fixed": "#ffdf9f",
+                    "on-secondary": "#3c0091",
+                    "on-secondary-fixed-variant": "#5516be",
+                    "on-primary-container": "#00285d",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .glass-card {
+            background: rgba(53, 52, 55, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(66, 71, 84, 0.15);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(173, 198, 255, 0.08) 0%, rgba(19, 19, 21, 0) 70%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-900/40 backdrop-blur-xl shadow-2xl shadow-blue-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-neutral-100">
+                Nuel Effiong
+            </div>
+<div class="hidden md:flex items-center gap-8 font-manrope tracking-tight font-medium text-sm">
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#portfolio">Portfolio</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#academy">Academy</a>
+<a class="text-neutral-400 hover:text-neutral-100 transition-colors" href="#contact">Work With Me</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed px-6 py-2 rounded-xl font-bold text-sm transition-transform active:scale-95" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 px-6 overflow-hidden hero-glow">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/20 text-primary text-xs font-bold uppercase tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                    Now accepting Q4 projects
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-on-surface">
+                    I Build <span class="text-gradient">High-Converting</span> Apps, Websites &amp; AI Systems
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Founded by <span class="text-on-surface font-semibold">Nuel Effiong</span>. Architect behind Zeerocodes Automation and lead mentor at AI Income Academy. We don't just build software; we engineer revenue-generating assets.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed rounded-xl font-bold flex items-center justify-center gap-2 transition-all hover:shadow-[0_0_20px_rgba(173,198,255,0.3)] active:scale-95" href="#contact">
+                        Work With Me <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="px-8 py-4 bg-surface-variant/40 backdrop-blur text-on-surface rounded-xl font-bold border border-outline-variant/10 flex items-center justify-center gap-2 transition-all hover:bg-surface-variant/60 active:scale-95" href="#portfolio">
+                        View My Work
+                    </a>
+</div>
+</div>
+<div class="relative lg:h-[600px] flex items-center justify-center">
+<!-- Floating Glass Elements -->
+<div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 blur-[100px] rounded-full"></div>
+<div class="relative w-full max-w-md aspect-square">
+<div class="absolute top-0 right-0 w-64 h-64 glass-card rounded-3xl p-6 shadow-2xl rotate-3 translate-x-10 -translate-y-10 border-white/5">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<div class="h-2 w-24 bg-surface-variant rounded-full"></div>
+</div>
+<div class="space-y-3">
+<div class="h-3 w-full bg-surface-variant/50 rounded-full"></div>
+<div class="h-3 w-4/5 bg-surface-variant/50 rounded-full"></div>
+<div class="h-3 w-2/3 bg-surface-variant/50 rounded-full"></div>
+</div>
+</div>
+<div class="absolute bottom-10 left-0 w-72 h-48 glass-card rounded-3xl p-6 shadow-2xl -rotate-6 -translate-x-12 translate-y-12 border-white/5">
+<div class="flex justify-between items-end mb-6">
+<div class="h-20 w-3 bg-primary/40 rounded-full"></div>
+<div class="h-12 w-3 bg-primary/20 rounded-full"></div>
+<div class="h-24 w-3 bg-primary rounded-full"></div>
+<div class="h-16 w-3 bg-primary/60 rounded-full"></div>
+<div class="h-14 w-3 bg-primary/30 rounded-full"></div>
+</div>
+<div class="text-xs font-bold text-primary tracking-widest uppercase">Growth Matrix</div>
+</div>
+<img alt="Dashboard visualization" class="w-full h-full object-cover rounded-3xl shadow-2xl border border-outline-variant/10" data-alt="Modern dark theme software dashboard with sleek data visualizations and complex automation workflow diagrams in blue and purple aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSn3yO3DVopkDejIzztiB-qNKw_0asmVMe05390CqvfLvt69xZDuHHB5vRnJViN-7BFpvOLC-mclHjokRAlxAuvWteRkcYIcejtXnYBjFzaH1-VpxoOcamJmZAu_10g9FQkdUCgYLupwWMPHpPwmkUg7y5-JuxO6BX2VQIwD_NhqAA3XX_zvw-nK1gpXZSDK0x62VLzz2H7CDk6x8y6bPm8B_OxIhlt-DmA9USu16Hfoz9rQlrrLeMq6LPllUVTS7P3XnbunSSvLQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Strip -->
+<section class="py-12 bg-surface-container-low border-y border-outline-variant/5">
+<div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center md:justify-between gap-12">
+<div class="text-center md:text-left">
+<div class="text-4xl font-extrabold text-on-surface">50+</div>
+<div class="text-sm font-medium text-on-surface-variant uppercase tracking-widest mt-1">High-End Projects</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-4xl font-extrabold text-on-surface">100+</div>
+<div class="text-sm font-medium text-on-surface-variant uppercase tracking-widest mt-1">Academy Students</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-4xl font-extrabold text-on-surface">100%</div>
+<div class="text-sm font-medium text-on-surface-variant uppercase tracking-widest mt-1">Real Results, Not Theory</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-4xl font-extrabold text-on-surface">24/7</div>
+<div class="text-sm font-medium text-on-surface-variant uppercase tracking-widest mt-1">AI-Powered Systems</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-2xl group-hover:opacity-40 transition-opacity"></div>
+<img alt="Nuel Effiong Profile" class="relative rounded-3xl w-full aspect-[4/5] object-cover border border-outline-variant/20 shadow-2xl" data-alt="Confident young professional man with focused expression, wearing dark minimalist attire, set against a moody high-end office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO9CcorSNiHouwWHySr41zVetedPgUILEMdzORZD6tzeSI8c9hPpHiTfE_lFFfwiDlMfiJY8i5-BBl5uwLfWb8YzHTaIMj6xq9ZUWWd2m5sD7n53Q82na7VXHGbmBKlMDRx9PXN5o4Y7NSgzHuwe0pq5DrKU-Bp7FC3_t9cdaL-GjlsTRVh3wff7VxqcUh-qdRWe_XxudvsHYrUYHNq0BRzFIdAmUrvcOq2uAFCdbj03jfed7-CdjEIhOK7819noMbuhL9nFDlzBw"/>
+</div>
+</div>
+<div class="lg:w-1/2 space-y-6">
+<h2 class="text-label-md text-tertiary font-bold tracking-[0.2em] uppercase">The Architect</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold text-on-surface leading-tight">I am a Builder of Systems, Not Just Code.</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    Hello, I'm Nuel Effiong. I specialize in the intersection of efficiency and profitability. My philosophy is simple: manual tasks are a tax on your business's future. 
+                </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    As the founder of <span class="text-on-surface font-bold">Zeerocodes</span> and <span class="text-on-surface font-bold">AI Income Academy</span>, I've spent the last 5 years perfecting the art of building scalable digital products and automated infrastructures that work while you sleep.
+                </p>
+<div class="pt-6 grid grid-cols-2 gap-4">
+<div class="glass-card p-4 rounded-2xl">
+<div class="text-tertiary font-bold mb-1">Zeerocodes</div>
+<div class="text-sm text-on-surface-variant">Bespoke Automation Agency</div>
+</div>
+<div class="glass-card p-4 rounded-2xl">
+<div class="text-secondary font-bold mb-1">AI Academy</div>
+<div class="text-sm text-on-surface-variant">Elite Mentorship Program</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Bento Grid -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface">The Arsenal</h2>
+<p class="text-on-surface-variant mt-4 text-lg">Weaponizing the latest technology for business growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Skill 1 -->
+<div class="md:col-span-2 lg:col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between group hover:border-primary/40 transition-all">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">bolt</span>
+<h4 class="text-2xl font-bold mb-4">Vibe Coding &amp; Rapid Prototyping</h4>
+<p class="text-on-surface-variant">Moving from idea to functional MVP in record time using advanced AI-assisted development workflows.</p>
+</div>
+<div class="mt-8 flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-medium">Replit Agent</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-medium">Cursor</span>
+<span class="px-3 py-1 bg-surface-container-high rounded-full text-xs font-medium">V0</span>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="glass-card p-8 rounded-3xl group hover:border-secondary/40 transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">neurology</span>
+<h4 class="text-xl font-bold mb-4">AI Automation</h4>
+<p class="text-on-surface-variant text-sm">LLM integrations, custom GPTs, and automated content engines.</p>
+</div>
+<!-- Skill 3 -->
+<div class="glass-card p-8 rounded-3xl group hover:border-tertiary/40 transition-all">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6">view_kanban</span>
+<h4 class="text-xl font-bold mb-4">No-Code Mastery</h4>
+<p class="text-on-surface-variant text-sm">Enterprise-grade solutions using Bubble, FlutterFlow, and Make.com.</p>
+</div>
+<!-- Skill 4 -->
+<div class="glass-card p-8 rounded-3xl group hover:border-primary/40 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">ads_click</span>
+<h4 class="text-xl font-bold mb-4">Sales Funnels</h4>
+<p class="text-on-surface-variant text-sm">Psychology-driven design that converts visitors into high-ticket clients.</p>
+</div>
+<!-- Skill 5 -->
+<div class="md:col-span-2 lg:col-span-3 glass-card p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8 group hover:border-white/20 transition-all">
+<div class="flex-1">
+<h4 class="text-2xl font-bold mb-4">Digital Products &amp; Mentorship</h4>
+<p class="text-on-surface-variant">Building scalable education ecosystems. I've helped over 100 students transition into the AI economy through structured mentorship.</p>
+<div class="mt-6 flex gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-sm font-semibold">Curriculum Design</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="text-sm font-semibold">Community Ops</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3 bg-surface-container-high rounded-2xl overflow-hidden aspect-video">
+<img alt="Mentorship" class="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500" data-alt="Overhead shot of a collaborative workspace with laptops, notebooks, and creative brainstorming materials, vibrant yet organized" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAQg8yl9Npo3dg119n0WiEg-U5lpn_77GZBQDH6vWXXXjWC1bQXksW0J2tTwcGMx2Ncr4mVcrBVz02reJ8RPICDsAj7FT6oXdM7UPcN9SNt5Y5mQiZzGnIyheSdRTbn_-pTACc2yvp2-XpprhGSBdzyRj0gVr2ULJwi8enTVhdiZCL6uRrP6d18fppm4mFJa033GkPXhOrmPYXWYmaRVYM_x1jbVn7SU6CS24zQWXkqp3rm5X7hjjqutu62KmUoHD_3FNBVs_Zh54"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Showcase -->
+<section class="py-32 px-6" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<h2 class="text-label-md text-primary font-bold tracking-[0.2em] uppercase mb-4">Selected Works</h2>
+<h3 class="text-4xl md:text-5xl font-extrabold text-on-surface">Real Products, Real Impact</h3>
+</div>
+<a class="text-tertiary font-bold hover:underline underline-offset-8 transition-all" href="#">View All Projects</a>
+</div>
+<div class="space-y-24">
+<!-- Project 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1 space-y-6">
+<div class="text-sm font-bold text-secondary-fixed-dim uppercase tracking-widest">SaaS Platform</div>
+<h4 class="text-3xl font-bold">AutoScale Content Engine</h4>
+<div class="space-y-4">
+<div class="flex gap-3">
+<span class="text-primary font-bold">Problem:</span>
+<p class="text-on-surface-variant">Client spent 40+ hours/week manually creating and scheduling social media assets.</p>
+</div>
+<div class="flex gap-3">
+<span class="text-primary font-bold">Solution:</span>
+<p class="text-on-surface-variant">Built an AI-driven dashboard that scrapes trends, generates scripts, and automates video editing.</p>
+</div>
+<div class="flex gap-3">
+<span class="text-tertiary font-bold">Result:</span>
+<p class="text-on-surface font-semibold">90% reduction in manual labor, 4x output increase.</p>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<a class="text-on-surface font-bold flex items-center gap-2 group" href="#">
+                                Case Study <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="glass-card p-4 rounded-[2.5rem] rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Project Preview" class="rounded-3xl shadow-2xl border border-outline-variant/10" data-alt="Ultra-modern SaaS landing page design featuring vibrant data charts and a clean dark interface with glowing accent lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDde3komymiFYxJ1TemwqsKynm2NvoRbGt8ua_9JVhjTJ0mIC_hkGskwW0Hl1mOW2fUKPgPPhMEAJXzJBnWuujzoq9_W64UEde6B3rtCy-8tSl2F_qmfuTjygmHFfPioBfG35FMQBlF0og14oBimIq1cJRHYac345SxWMWO55YosVXWjYH3zNXzHhFCXxtP07h3pOhXQDUk-i8lh3WfWjSdOly32v1ihHutXaQOI2uJfyPmlTxg1g-ZueoYvWITmG0eIcLEJBjd46s"/>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<div class="glass-card p-4 rounded-[2.5rem] -rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Project Preview" class="rounded-3xl shadow-2xl border border-outline-variant/10" data-alt="Complex business analytics dashboard with multiple data panels, heatmaps, and financial performance indicators in a professional dark mode" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHX8KdgpQbN0kQVZokBsnSjBdOUr04q3FG5Pf4AEOGFrQfOHlZqCZYKBnho7EBoXfdy5GOof1Tj1WmvSg-rYg-iZBFyXiTXGmDxHllaCRy0IdQjBtGC2ljSp06f8TnpZV_md9xpl0uBeAKV81f8ORvfTDBgpOopW3Mas20dK3LTOrEKzVnsddk-ImXLcNXeU8otIH4G8uJaOM0LEUc15aCUnuo4jq_aAA8PqhXhmeQiWjcKId84feKyYx8k6GZ6LXNn_PC6WK7gk8"/>
+</div>
+</div>
+<div class="space-y-6">
+<div class="text-sm font-bold text-primary uppercase tracking-widest">Automation Ecosystem</div>
+<h4 class="text-3xl font-bold">CRM 2.0: The Intelligent Pipeline</h4>
+<div class="space-y-4">
+<div class="flex gap-3">
+<span class="text-primary font-bold">Problem:</span>
+<p class="text-on-surface-variant">Sales team losing 30% of leads due to slow follow-up and manual data entry.</p>
+</div>
+<div class="flex gap-3">
+<span class="text-primary font-bold">Solution:</span>
+<p class="text-on-surface-variant">Customized automation layer connecting WhatsApp, Email, and CRM with AI lead qualification.</p>
+</div>
+<div class="flex gap-3">
+<span class="text-tertiary font-bold">Result:</span>
+<p class="text-on-surface font-semibold">Lead conversion rate jumped from 12% to 34% in 3 months.</p>
+</div>
+</div>
+<div class="pt-4 flex gap-4">
+<a class="text-on-surface font-bold flex items-center gap-2 group" href="#">
+                                View Dashboard <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Income Academy -->
+<section class="py-32 px-6 bg-surface-container-low overflow-hidden relative" id="academy">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-secondary/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="glass-card p-12 md:p-20 rounded-[3rem] border-white/5 flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-3/5 space-y-8">
+<div class="inline-block px-4 py-1 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold tracking-widest uppercase">AI Income Academy</div>
+<h3 class="text-4xl md:text-6xl font-extrabold text-on-surface">Learn how to build apps... even as a beginner.</h3>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        I've distilled years of development and automation experience into a high-impact mentorship program. No fluff. Just the systems you need to build profitable digital products.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-lg">Zero-to-One No-Code Development</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-lg">AI Automation Workflows (Zapier/Make)</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-lg">Monetization &amp; Freelancing Strategies</span>
+</li>
+</ul>
+<div class="pt-4">
+<a class="px-10 py-5 bg-gradient-to-br from-secondary to-secondary-container text-on-surface font-black rounded-2xl flex items-center justify-center lg:inline-flex gap-3 transition-transform hover:scale-105" href="#">
+                            Join the Academy <span class="material-symbols-outlined">school</span>
+</a>
+</div>
+</div>
+<div class="lg:w-2/5 grid grid-cols-2 gap-4">
+<img alt="Students" class="rounded-3xl w-full aspect-square object-cover" data-alt="Diverse group of tech students working on laptops in a high-energy, modern co-working environment with neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyF6jPpCv45iBJ6tftGNDZcCnlbifhRemJUmmBA8v1kymI_E_zh7mJ2-e_OOd925faPiCf3wOffdpGVSxksF0vWx1rhDfT9Fc_mfsR_EFfU4dgDmDcDgcJ6X3QQfVLhXsCeYeI563lsRliDr2KmAVjjb34rpkU_fB-Zab3aWZaC23M-rcVvdIANi0UYxXae0PqpPPDkIEye-x5vTqgzRervWtYg31-NgPXoWIp-KkXmfHTxLIBYmrp8qszyAACAOYw3ATkKikuDGw"/>
+<img alt="Course UI" class="rounded-3xl w-full aspect-square object-cover mt-8" data-alt="Digital tablet showing a course dashboard with various modules on AI and app development, styled in dark mode" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcsfSkQqVabx2NuDgHeTghTKlaSwsuRFcZx68IFCGe5bIPnMXmJtoer1OOoEX0K1Oqw1XERgvbyTYxj-2S7T5LkcDv972TG1cCaVPTutq-YvEPCzzmh33s1G8HiCOJl_19ygvDfX6AWHLuBMs4msBFwfT3mLYWEa59JFoQFQaslNnLrnr8-v7xBehUJbqJb2Yw3dciI2gvRwC2o-mFLofMoPgl45OjSfD0BrXuzHemWGlwhGOzfAiZKT-D6LZs0PxRHH8zPbqOJ9c"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Work With Me -->
+<section class="py-32 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1">
+<h2 class="text-4xl font-extrabold text-on-surface">Why Choose Nuel Effiong?</h2>
+<p class="mt-6 text-on-surface-variant text-lg">I don't just build features; I solve business bottlenecks.</p>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-4">
+<div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<h4 class="text-xl font-bold">Speed of Execution</h4>
+<p class="text-on-surface-variant">Time is money. My "Vibe Coding" workflow allows me to ship features in days, not months.</p>
+</div>
+<div class="space-y-4">
+<div class="w-12 h-12 bg-tertiary/20 rounded-xl flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<h4 class="text-xl font-bold">ROI-First Design</h4>
+<p class="text-on-surface-variant">Every button and automation I build is designed to directly impact your bottom line.</p>
+</div>
+<div class="space-y-4">
+<div class="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<h4 class="text-xl font-bold">AI Native</h4>
+<p class="text-on-surface-variant">I don't just add AI as an afterthought. I build systems where AI is the core engine of efficiency.</p>
+</div>
+<div class="space-y-4">
+<div class="w-12 h-12 bg-surface-variant rounded-xl flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<h4 class="text-xl font-bold">Strategic Partnership</h4>
+<p class="text-on-surface-variant">I act as a technical co-founder for your project, not just another outsourced dev.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-extrabold text-center mb-16 uppercase tracking-widest">Success Stories</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="glass-card p-8 rounded-3xl space-y-6">
+<div class="flex gap-1 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic">"Nuel transformed our manual onboarding into a seamless automated machine. Our customer satisfaction scores skyrocketed immediately."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant"></div>
+<div>
+<div class="font-bold">Marcus Chen</div>
+<div class="text-xs text-on-surface-variant">CEO, Nexus Solutions</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-3xl space-y-6 border-primary/20">
+<div class="flex gap-1 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic">"The Academy is worth 10x the price. Nuel doesn't just teach tools; he teaches the mindset of a systems builder."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant"></div>
+<div>
+<div class="font-bold">Sarah Jenkins</div>
+<div class="text-xs text-on-surface-variant">AI Academy Graduate</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-3xl space-y-6">
+<div class="flex gap-1 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface italic">"Fast, professional, and business-focused. Zeerocodes is the best technical partner we've ever worked with."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant"></div>
+<div>
+<div class="font-bold">David Okoro</div>
+<div class="text-xs text-on-surface-variant">Founder, FintechFlow</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-6" id="contact">
+<div class="max-w-4xl mx-auto text-center space-y-12">
+<h2 class="text-5xl md:text-6xl font-extrabold text-on-surface">Ready to Turn Your Idea Into a Real Product?</h2>
+<p class="text-xl text-on-surface-variant">Whether it's a high-converting website, an AI automation system, or joining the Academy, let's build your future today.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a class="px-12 py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-black text-lg rounded-2xl transition-transform hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(77,142,255,0.2)]" href="#">
+                    Start a Project
+                </a>
+<a class="px-12 py-5 bg-surface-variant text-on-surface font-black text-lg rounded-2xl transition-transform hover:bg-surface-variant/80 active:scale-95 border border-outline-variant/10" href="#">
+                    Book a Call
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-neutral-950 w-full rounded-t-3xl">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full mt-32 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="font-manrope font-black text-lg text-neutral-200">Nuel Effiong</div>
+<p class="text-neutral-500 font-inter text-xs tracking-wide mt-2">© 2024 Zeerocodes &amp; AI Income Academy. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-inter text-xs tracking-wide uppercase">
+<a class="text-neutral-500 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-neutral-500 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-neutral-500 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">YouTube</a>
+<a class="text-neutral-500 hover:text-blue-300 transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+</div>
+<div class="mt-8 md:mt-0">
+<div class="text-blue-400 font-inter text-xs tracking-wide uppercase mb-2">Let's Talk</div>
+<div class="text-neutral-200 font-bold">hello@nueleffiong.com</div>
+</div>
+</div>
+</footer>
+</body></html>
